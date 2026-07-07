@@ -19,16 +19,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module">
-      if (window.location.hostname.endsWith("github.io")) {
-        const stylesheet = document.createElement("link");
-        stylesheet.rel = "stylesheet";
-        stylesheet.href = "/portfolio/dist/assets/main-C7IWobn0.css";
-        document.head.appendChild(stylesheet);
-        import("/portfolio/dist/assets/" + "main-Zqey1ciN.js");
-      } else {
-        import("/src/main.jsx");
-      }
-    </script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
